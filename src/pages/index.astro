@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Pledge from '../components/Pledge.astro';
+import Flag from '../components/Flag.astro';
+import About from '../components/About.astro';
+---
+
+<Layout title="Welcome to Greenland">
+	<main>
+		<div class="max-w-7xl mx-auto my-10">
+			<h1 class="font-black text-7xl text-center">Welcome to <span class="text-green-600 block">The "Real" Greenland</span></h1>
+		</div>
+		<div class="max-w-7xl mx-auto">
+			<About />
+		</div>
+		<div class="max-w-7xl mx-auto space-y-5 mb-20">
+			<Flag />
+		</div>
+		<Pledge />
+	</main>
+</Layout>
+
